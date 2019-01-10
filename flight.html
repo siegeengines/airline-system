@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<h>Flight Checking System</h>
+<p>Please choose from the following options: </p>
+	<select name = "search_type">
+	<option value = "by_city">By City</option>
+	<option value = "by_airport">By Airport</option>
+	<option value = "by_flight_and_arrival_date">By Flight Number and Arrival Date</option>
+	<option value = "by_flight_and_departure_date">By Flight Number and Departure Date</option>
+	</select></br>
+<form action="/flight" method="POST">
+	<input type="text" name = "source_city" placeholder="Source City" required/> </br>
+	<input type="text" name = "destination_city" placeholder="Destionation City" required/></br>
+	<input type="submit" value = Go! 
+	
+</center>
+
+</form>
+
+<a href="/">Go back</a>
+
+</body>
+
+
+</html>

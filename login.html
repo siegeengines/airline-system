@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<h1>Poly Flight Ticket Booking System</h1>
+<p>Welcome to the login portal!</p>
+<form action="/loginAuth" method="POST">
+	<select name = "user_type">
+	<option value = "customer">Customer</option>
+	<option value = "booking_agent">Booking Agent</option>
+	<option value = "airline_staff">Airline Staff</option>
+	</select></br>
+	<input type="text" name = "username" placeholder="username" required/> </br>
+	<input type="password" name = "password" placeholder="password" required/></br>
+	<input type="submit" value = Login />
+	{% if error %}
+		<p class="error"><strong>Error:</strong> {{error}}</p>
+	{% endif %}
+</form>
+</center>
+</body>
+
+<a href="/">Go back</a>
+
+</html>
